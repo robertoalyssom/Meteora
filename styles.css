@@ -2,6 +2,16 @@
     font-size: 0.8rem;
 }
 
+.btn-lilas {
+    color: #fff;
+    background-color: #9353FF;
+    border-color: #9353FF;
+}
+
 .divs-facilidades {
     width: 325px;
+}
+
+.verde-limao {
+    color: #DAFF01;
 }
