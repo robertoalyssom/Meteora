@@ -1,0 +1,44 @@
+.modal-width {
+    width: 350px;
+}
+
+.modal-overlay::backdrop {
+    background: rgba(0, 0, 0, .7);
+}
+
+.texto-cinza-escuro {
+    color: var(--cinza);
+}
+
+.hover-verde-limao:hover {
+    color: var(--verde-limao);
+}
+
+.border-modal {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: none;
+}
+
+.detalhes-descricao {
+    position: relative;
+}
+
+.detalhes-descricao::after {
+    content: "";
+    border: 1px solid var(--black);
+    display: inline-block;
+    position: absolute;
+    width: 95%;
+    top: 65px;
+    right: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .modal-width {
+        width: 695px;
+    }
+
+    .border-modal{
+        border: none;
+    }
+}

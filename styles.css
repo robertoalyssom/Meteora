@@ -1,5 +1,16 @@
+@import url("./src/styles/modal.css");
+
+:root {
+    --black: black;
+    --white: #fff;
+    --light-grey: #ADB5BD;
+    --cinza: #6C757D;
+    --lilas: #9353FF;
+    --verde-limao: #DAFF01;
+}
+
 .bg-black {
-    background-color: black;
+    background-color: var(--black);
 }
 
 .texto-menor {
@@ -7,9 +18,9 @@
 }
 
 .btn-lilas {
-    color: #fff;
-    background-color: #9353FF;
-    border-color: #9353FF;
+    color: var(--white);
+    background-color: var(--lilas);
+    border-color: var(--lilas);
 }
 
 .divs-facilidades,
@@ -18,11 +29,19 @@
 }
 
 .verde-limao {
-    color: #DAFF01;
+    color: var(--verde-limao);
+}
+
+.nav-item:hover {
+    color: var(--verde-limao);
+}
+
+.cinza-claro {
+    color: #ADB5BD;
 }
 
 @media screen and (min-width: 768px) {
     .div-novidades {
-    width: 655px;
-}
+        width: 655px;
+    }
 }
