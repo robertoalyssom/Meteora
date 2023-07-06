@@ -1,5 +1,5 @@
 async function productsList() {
-  const promise = await fetch("http://localhost:3000/produtos");
+  const promise = await fetch("https://meteora-db.vercel.app/produtos");
   const promiseConverted = await promise.json();
 
   return promiseConverted;
