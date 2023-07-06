@@ -4,6 +4,7 @@
             "nome": "Camiseta Conforto",
             "descricao": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
             "preco": "R$ 70,00",
+            "categoria": "camisetas",
             "img": [ 
                     "./assets/Mobile/produtos/camiseta.png",
                     "./assets/Tablet/produtos/camiseta.png",
@@ -14,6 +15,7 @@
             "nome": "Calça Alfaiataria",
             "descricao": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
             "preco": "R$ 180,00",
+            "categoria": "calcas",
             "img": [
                 "./assets/Mobile/produtos/calca.png",
                 "./assets/Tablet/produtos/calca.png",
@@ -24,6 +26,7 @@
             "nome": "Tênis Chunky",
             "descricao": "Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.",
             "preco": "R$ 225,00",
+            "categoria": "calcados",
             "img": [
                 "./assets/Mobile/produtos/tenis.png",
                 "./assets/Tablet/produtos/tenis.png",
@@ -34,6 +37,7 @@
             "nome": "Jaqueta Jeans",
             "descricao": "Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.Modelo unissex oversized com gola de camurça. Atemporal e autêntica!",
             "preco": "R$ 150,00",
+            "categoria": "casacos",
             "img": [
                 "./assets/Mobile/produtos/jaqueta-jeans.png",
                 "./assets/Tablet/produtos/jaqueta-jeans.png",
@@ -44,6 +48,7 @@
             "nome": "Óculos Redondo",
             "descricao": "Armação metálica em grafite com lentes arredondadas. Sem erro!",
             "preco": "R$ 120,00",
+            "categoria": "oculos",
             "img": [
                 "./assets/Mobile/produtos/oculos.png",
                 "./assets/Tablet/produtos/oculos.png",
@@ -54,6 +59,7 @@
             "nome": "Bolsa coringa",
             "descricao": "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
             "preco": "R$ 120,00",
+            "categoria": "bolsas",
             "img": [
                 "./assets/Mobile/produtos/bolsa.png",
                 "./assets/Tablet/produtos/bolsa.png",

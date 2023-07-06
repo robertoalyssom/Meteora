@@ -1,13 +1,11 @@
 import { conectApi } from "./conectar.js";
 import showAndCloseModal from "./modal.js";
 
-const produtosContainer = document.querySelector("#produtos-container");
+export const productsContainer = document.querySelector("#produtos-container");
 
-async function writeCard() {
-  let products = await conectApi.productsList();
-
-  products.forEach((product) => {
-    produtosContainer.appendChild(
+export function writeCard(productsList) {
+  productsList.forEach((product) => {
+    productsContainer.appendChild(
       cardMaker(product.img, product.nome, product.descricao, product.preco)
     );
   });
@@ -43,4 +41,4 @@ function cardMaker(img, nome, descricao, preco) {
   return cardContainer;
 }
 
-writeCard();
+writeCard(await conectApi.productsList());
