@@ -1,5 +1,6 @@
 import { conectApi } from "./conectar.js";
-import showAndCloseModal from "./modal.js";
+import showModal from "./modal.js";
+import makeModal from "./modal.js";
 
 export const productsContainer = document.querySelector("#produtos-container");
 
@@ -10,7 +11,7 @@ export function writeCard(productsList) {
     );
   });
 
-  showAndCloseModal();
+  showModal(productsList);
 }
 
 function cardMaker(img, nome, descricao, preco) {
@@ -41,4 +42,4 @@ function cardMaker(img, nome, descricao, preco) {
   return cardContainer;
 }
 
-writeCard(await conectApi.productsList());
+writeCard(await conectApi.productsList()); // + productsContainer

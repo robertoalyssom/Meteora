@@ -38,9 +38,9 @@
           </li>
         </ul>
         <form class="d-flex">
-          <input class="form-control me-2 rounded-0" type="search" placeholder="Digite o Produto"
+          <input id="search-field" class="form-control me-2 rounded-0" type="search" placeholder="Digite o Produto"
             aria-label="Pesquisar" />
-          <button class=" btn btn-outline-light rounded-0" type="submit">
+          <button id="search-btn" class=" btn btn-outline-light rounded-0" type="submit">
             Buscar
           </button>
         </form>
@@ -381,7 +381,7 @@
 
   <!-- modal produtos-->
   <dialog class="modal-width modal-overlay border-0 p-0 shadow-lg" data-modal="produtos">
-    <div class="bg-black text-light p-2 px-3 d-flex justify-content-between align-items-center">
+    <!-- <div class="bg-black text-light p-2 px-3 d-flex justify-content-between align-items-center">
       <div class="d-flex align-items-center gap-3">
         <i class="bi bi-check-circle fs-2 verde-limao"></i>
         <h3 class="mb-0 fs-4">Confira detalhes sobre o produto</h3>
@@ -449,7 +449,7 @@
           <button type="submit" class="btn btn-lilas rounded-0 mb-md-2">Adicionar à sacola</button>
         </div>
       </div>
-    </div>
+    </div> -->
   </dialog>
 
   <!-- footer -->
@@ -466,5 +466,6 @@
   <script src="./src/scripts/writeProducts.js" type="module"></script>
   <script src="./src/scripts/modal.js" type="module"></script>
   <script src="./src/scripts/filter.js" type="module"></script>
+  <script src="./src/scripts/search.js" type="module"></script>
 </body>
 </html>
