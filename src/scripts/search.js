@@ -23,7 +23,7 @@ async function searchProducts() {
     productsContainer.innerHTML = `
     <div class="container mx-auto mb-4 border border-danger text-center p-3">
       <i class="bi bi-emoji-frown-fill text-danger fs-1 d-inline-block mb-2"></i>
-      <p class=" fs-3 text-danger">Ops! O produto "${searchFieldValue}" não existe! Por faver, busque por um outro produto.</p>
+      <p class=" fs-3 text-danger">Ops! Infelizmente, o produto "${searchFieldValue}" não faz parte do nosso catálogo atualmente.</p>
     </div>
     `;
   }

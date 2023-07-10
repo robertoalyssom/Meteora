@@ -320,7 +320,7 @@
     <!-- seção facilidades -->
     <section class="py-4 mt-5 bg-black text-light mx-auto">
 
-      <h2 class="text-center">Conheça todas as nossas facilidades</h2>
+      <h2 class="text-center mb-4">Conheça todas as nossas facilidades</h2>
 
       <div class="d-flex flex-column align-items-center gap-3 flex-lg-row justify-content-center px-3">
         <div class="divs-facilidades d-flex align-items-center">
@@ -351,14 +351,15 @@
     </section>
 
     <!-- formulário -->
-    <form class="container border border-secondaty my-5 p-3 text-center div-novidades mx-auto">
+    <form id="newsletter-form" class="container border border-secondaty my-5 p-3 text-center div-novidades mx-auto">
       <h5>Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!</h5>
 
       <div class="input-group">
         <input type="email" class="form-control border-secondaty rounded-0" placeholder="Digite seu e-mail"
-          aria-label="Digite seu e-mail" aria-describedby="button-addon2" />
-        <button class="btn rounded-0 btn-lilas" type="button" id="button-addon2" data-btn="form">Enviar</button>
+          aria-label="Digite seu e-mail" aria-describedby="button-addon2" data-formField />
+        <button class="btn rounded-0 btn-lilas" type="submit" id="button-addon2" data-formBtn>Enviar</button>
       </div>
+      <span id="error-email" class="text-danger fw-bold d-block mt-2"></span>
     </form>
   </main>
 
@@ -461,11 +462,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-
   <script src="./src/scripts/conectar.js" type="module"></script>
   <script src="./src/scripts/writeProducts.js" type="module"></script>
   <script src="./src/scripts/modal.js" type="module"></script>
   <script src="./src/scripts/filter.js" type="module"></script>
   <script src="./src/scripts/search.js" type="module"></script>
+  <script src="./src/scripts/emailForm.js" type="module"></script>
 </body>
 </html>

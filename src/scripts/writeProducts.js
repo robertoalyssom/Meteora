@@ -1,6 +1,5 @@
 import { conectApi } from "./conectar.js";
-import showModal from "./modal.js";
-import makeModal from "./modal.js";
+import { showModal } from "./modal.js";
 
 export const productsContainer = document.querySelector("#produtos-container");
 

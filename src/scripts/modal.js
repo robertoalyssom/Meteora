@@ -1,7 +1,7 @@
 const modalProdutos = document.querySelector("[data-modal=produtos]");
 const modalForm = document.querySelector("[data-modal=form]");
 
-export default async function showModal(productsList) {
+export async function showModal(productsList) {
   const openModalBtns = document.querySelectorAll("[data-btn]");
 
   openModalBtns.forEach((btn) => {
@@ -12,8 +12,7 @@ export default async function showModal(productsList) {
 
       writeModal(productsList, btn);
 
-      if (btnDataAttibuteValue === "form") return modalForm.showModal();
-      modalProdutos.showModal();
+      if (btnDataAttibuteValue === "produtos") return modalProdutos.showModal();
     });
   });
 }
@@ -37,7 +36,7 @@ function writeModal(productsList, btn) {
   closeModal();
 }
 
-function closeModal() {
+export function closeModal() {
   const closeModalBtns = document.querySelectorAll("[data-close]");
 
   closeModalBtns.forEach((btn) => {
