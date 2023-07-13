@@ -13,9 +13,9 @@
 
 <body>
   <!-- header/navbar -->
-  <nav class="navbar navbar-expand-md navbar-light bg-black navbar-dark">
+  <nav class="navbar navbar-expand-md navbar-light bg-black navbar-dark navbar-fixed">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="./index.html">
         <h1 class="m-0"><img class="d-block" src="./assets//logo-meteora.png" alt="Logo da loja Meteora"></h1>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -23,21 +23,21 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse flex-nowrap" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto">
+        <ul class="navbar-nav me-auto gap-3 flex-nowrap mb-3 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link hover-verde-limao active" aria-current="page" href="#">Home</a>
+            <a class="navbar-link" aria-current="page" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link hover-verde-limao" href="#">Nossas Lojas</a>
+            <a class="navbar-link" href="#">Nossas Lojas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link hover-verde-limao" href="#">Novidades</a>
+            <a class="navbar-link" href="#">Novidades</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link hover-verde-limao" href="#">Promoções</a>
+            <a class="navbar-link" href="#">Promoções</a>
           </li>
         </ul>
-        <form class="d-flex">
+        <form class="d-flex ms-2">
           <input id="search-field" class="form-control me-2 rounded-0" type="search" placeholder="Digite o Produto"
             aria-label="Pesquisar" />
           <button id="search-btn" class=" btn btn-outline-light rounded-0" type="submit">
@@ -49,7 +49,7 @@
   </nav>
 
   <!-- carousel -->
-  <div id="carouselExampleCaptions" class="carousel slide mb-3" data-bs-ride="carousel">
+  <div id="carouselExampleCaptions" class="carousel slide mb-3 carousel" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
@@ -111,7 +111,7 @@
     <div class="container row mx-auto g-4">
 
       <div class="col-6 col-md-4 col-xxl-2">
-        <div class="card btn rounded-0 border-0 m-0 p-0" data-btn-categorias="camisetas">
+        <div class="card btn card-categories rounded-0 border-0 m-0 p-0" data-btn-categorias="camisetas">
           <img class="d-md-none" src="./assets/Mobile/categorias/categoria-camiseta.png"
             alt="Camiseta masculina de manga na cor verde, com bolso e detalhe vernemelho">
           <img class="d-none d-md-block d-xl-none" src="./assets/Tablet/categorias/categoria-camiseta.png"
@@ -125,7 +125,7 @@
       </div>
 
       <div class="col-6 col-md-4 col-xxl-2" data-btn-categorias="bolsas">
-        <div class="card btn rounded-0 border-0 m-0 p-0">
+        <div class="card btn card-categories rounded-0 border-0 m-0 p-0">
           <img class="d-md-none" src="./assets/Mobile/categorias/categoria-bolsas.png"
             alt="Bolsa de couro marrom quadriculada, com uma fina corrente como alça">
           <img class="d-none d-md-block d-xl-none" src="./assets/Tablet/categorias/categoria-bolsas.png"
@@ -139,7 +139,7 @@
       </div>
 
       <div class="col-6 col-md-4 col-xxl-2" data-btn-categorias="calcados">
-        <div class="card btn rounded-0 border-0 m-0 p-0">
+        <div class="card btn card-categories rounded-0 border-0 m-0 p-0">
           <img class="d-md-none" src="./assets/Mobile/categorias/categoria-calcados.png"
             alt="Um par de tênis coloridos, apoiados em uma caixa branca">
           <img class="d-none d-md-block d-xl-none" src="./assets/Tablet/categorias/categoria-calcados.png"
@@ -153,7 +153,7 @@
       </div>
 
       <div class="col-6 col-md-4 col-xxl-2" data-btn-categorias="calcas">
-        <div class="card btn rounded-0 border-0 m-0 p-0">
+        <div class="card btn card-categories rounded-0 border-0 m-0 p-0">
           <img class="d-md-none" src="./assets/Mobile/categorias/categoria-calcas.png"
             alt="Três calças Jeans em diferentes tons de azul empilhadas">
           <img class="d-none d-md-block d-xl-none" src="./assets/Tablet/categorias/categoria-calcas.png"
@@ -167,7 +167,7 @@
       </div>
 
       <div class="col-6 col-md-4 col-xxl-2" data-btn-categorias="casacos">
-        <div class="card btn rounded-0 border-0 m-0 p-0">
+        <div class="card btn card-categories rounded-0 border-0 m-0 p-0">
           <img class="d-md-none" src="./assets/Mobile/categorias/categoria-casacos.png"
             alt="Casaco marrom com dois bolsos">
           <img class="d-none d-md-block d-xl-none" src="./assets/Tablet/categorias/categoria-casacos.png"
@@ -181,7 +181,7 @@
       </div>
 
       <div class="col-6 col-md-4 col-xxl-2" data-btn-categorias="oculos">
-        <div class="card btn rounded-0 border-0 m-0 p-0">
+        <div class="card btn card-categories rounded-0 border-0 m-0 p-0">
           <img class="d-md-none" src="./assets/Mobile/categorias/categoria-oculos.png"
             alt="Óculos com armação dourada e lente redonda e escura">
           <img class="d-none d-md-block d-xl-none" src="./assets/Tablet/categorias/categoria-oculos.png"

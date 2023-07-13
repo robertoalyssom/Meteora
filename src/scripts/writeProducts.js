@@ -22,19 +22,21 @@ function cardMaker(img, nome, descricao, preco) {
   let imgDesktop = img[2];
 
   cardContainer.innerHTML = `
-    <div class="card rounded-0">
-      <img class="d-md-none" src="${imgMobile}"
-          alt="Modelo vestindo camiseta amarela-mostarda, calça preta com estampa e uma toca na cabeça">
-      <img class="d-none d-md-block d-xl-none" src="${imgTablet}"
-          alt="Modelo vestindo camiseta amarela-mostarda, calça preta com estampa e uma toca na cabeça">
-      <img class="d-none d-xl-block" src="${imgDesktop}"
-          alt="Modelo vestindo camiseta amarela-mostarda, calça preta com estampa e uma toca na cabeça">
-      <div class="card-body">
-          <h5 class="card-title">${nome}</h5>
-          <p class="card-text">${descricao}</p>
-          <p>${preco}</p>
-          <a href="#" class="btn rounded-0 btn-lilas" data-btn="produtos">Ver mais</a>
+    <div class="card card-product rounded-0">
+      <div class="card-product-container">
+        <img class="d-md-none w-100" src="${imgMobile}"
+            alt="Modelo vestindo camiseta amarela-mostarda, calça preta com estampa e uma toca na cabeça">
+        <img class="d-none d-md-block d-xl-none w-100" src="${imgTablet}"
+            alt="Modelo vestindo camiseta amarela-mostarda, calça preta com estampa e uma toca na cabeça">
+        <img class="card-product-img w-100 h-100 d-none d-xl-block w-100" src="${imgDesktop}"
+            alt="Modelo vestindo camiseta amarela-mostarda, calça preta com estampa e uma toca na cabeça">
       </div>
+      <div class="card-body">
+            <h5 class="card-title">${nome}</h5>
+            <p class="card-text">${descricao}</p>
+            <p>${preco}</p>
+            <a href="#" class="btn rounded-0 btn-lilas" data-btn="produtos">Ver mais</a>
+        </div>
     </div>
     `;
 

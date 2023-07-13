@@ -1,0 +1,12 @@
+.card-product-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-product-img {
+    transition: 1.3s;
+}
+
+.card-product:hover > .card-product-container > .card-product-img  {
+    transform: scale(1.1);
+}

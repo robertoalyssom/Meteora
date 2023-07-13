@@ -1,0 +1,21 @@
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: var(--white);
+    transition: .4s;
+    white-space: nowrap
+}
+
+.navbar-link:hover {
+    color: var(--verde-limao);
+}
+
+.navbar-link:active {
+    color: var(--lilas);
+}

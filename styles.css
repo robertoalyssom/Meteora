@@ -1,4 +1,8 @@
+@import url("./src/styles/header.css");
+@import url("./src/styles/carousel.css");
 @import url("./src/styles/modal.css");
+@import url("./src/styles/categories.css");
+@import url("./src/styles/products.css");
 
 :root {
     --black: black;
@@ -21,6 +25,17 @@
     color: var(--white);
     background-color: var(--lilas);
     border-color: var(--lilas);
+    transition: .4s;
+}
+
+.btn-lilas:hover {
+    background-color: var(--verde-limao);
+    color: var(--lilas);
+}
+
+.btn-lilas:active {
+    background-color: var(--black);
+    color: var(--verde-limao);
 }
 
 .divs-facilidades,

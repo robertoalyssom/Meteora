@@ -1,0 +1,7 @@
+.card-categories {
+    transition: .4s;
+}
+
+.card-categories:hover {
+    transform: translatey(-.6rem);
+}
